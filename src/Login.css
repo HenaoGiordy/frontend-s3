@@ -1,0 +1,121 @@
+.login-container {
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface, #f2f4f8);
+  padding: 2rem 1rem;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border, #e5e7eb);
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--text-h, #1a1a2e);
+  align-self: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-brand .brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--brand, #4f46e5);
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.login-card h1 {
+  font-size: 1.5rem;
+  color: #1a1a2e;
+  text-align: center;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.4rem;
+}
+
+.login-card label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.35rem;
+  margin-top: 1rem;
+}
+
+.login-card input {
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.login-card input:focus {
+  border-color: #4f46e5;
+}
+
+.login-card button {
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  background: var(--brand, #4f46e5);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.login-card button:hover {
+  background: var(--brand-dark, #4338ca);
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.85rem;
+  margin-top: 0.75rem;
+}
+
+.hint {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+.back-link {
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-decoration: none;
+  text-align: center;
+}
+
+.back-link:hover {
+  color: var(--brand, #4f46e5);
+}
