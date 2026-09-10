@@ -83,7 +83,7 @@ function Landing() {
           </nav>
           <div className="header-actions">
             <Link to="/login" className="btn btn-ghost">Iniciar sesión</Link>
-            <Link to="/login" className="btn btn-primary">Comenzar gratis</Link>
+            <Link to="/login?mode=signup" className="btn btn-primary">Comenzar gratis</Link>
           </div>
         </div>
       </header>
@@ -98,7 +98,7 @@ function Landing() {
               Sin instalaciones, sin complicaciones, cumpliendo siempre con la normativa vigente.
             </p>
             <div className="hero-actions">
-              <Link to="/login" className="btn btn-primary btn-lg">Comenzar gratis</Link>
+              <Link to="/login?mode=signup" className="btn btn-primary btn-lg">Comenzar gratis</Link>
               <a href="#features" className="btn btn-outline btn-lg">Ver características</a>
             </div>
             <div className="hero-stats">
@@ -191,7 +191,7 @@ function Landing() {
           <div className="landing-container cta-inner">
             <h2>Empieza a facturar electrónicamente hoy</h2>
             <p>Crea tu cuenta gratis, sin tarjeta de crédito.</p>
-            <Link to="/login" className="btn btn-primary btn-lg">Comenzar gratis</Link>
+            <Link to="/login?mode=signup" className="btn btn-primary btn-lg">Comenzar gratis</Link>
           </div>
         </section>
       </main>
