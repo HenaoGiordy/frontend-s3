@@ -1,4 +1,4 @@
-const API_BASE = 'https://e8onyjqft4.execute-api.us-east-2.amazonaws.com/Prod'
+const API_BASE = 'https://tvdhpxkwq3.execute-api.us-east-2.amazonaws.com/Prod'
 
 async function request(method, body) {
   const res = await fetch(`${API_BASE}/user`, {
