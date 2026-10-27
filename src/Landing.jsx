@@ -80,8 +80,10 @@ function Landing() {
             <a href="#features">Características</a>
             <a href="#how-it-works">Cómo funciona</a>
             <a href="#pricing">Precios</a>
+            <Link to="/chat" style={{ color: '#4f46e5', fontWeight: 600 }}>Asistente IA ✨</Link>
           </nav>
           <div className="header-actions">
+            <Link to="/chat" className="btn btn-ghost" style={{ color: '#4f46e5', fontWeight: 600 }}>💬 Chatbot</Link>
             <Link to="/login" className="btn btn-ghost">Iniciar sesión</Link>
             <Link to="/login?mode=signup" className="btn btn-primary">Comenzar gratis</Link>
           </div>
@@ -99,6 +101,7 @@ function Landing() {
             </p>
             <div className="hero-actions">
               <Link to="/login?mode=signup" className="btn btn-primary btn-lg">Comenzar gratis</Link>
+              <Link to="/chat" className="btn btn-outline btn-lg">💬 Probar Chatbot IA</Link>
               <a href="#features" className="btn btn-outline btn-lg">Ver características</a>
             </div>
             <div className="hero-stats">
