@@ -61,8 +61,14 @@ export async function sendChatMessage({
     }
   }
 
+  // Asegura que la URL incluya la ruta /chat si se ingresó solo la URL base del API Gateway
+  let targetUrl = (endpointUrl || '').trim()
+  if (targetUrl.startsWith('http') && !targetUrl.endsWith('/chat')) {
+    targetUrl = targetUrl.replace(/\/+$/, '') + '/chat'
+  }
+
   try {
-    const res = await fetch(endpointUrl, {
+    const res = await fetch(targetUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

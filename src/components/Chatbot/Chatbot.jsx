@@ -123,8 +123,12 @@ export default function Chatbot({ isFullscreen = false, onClose = null }) {
   }
 
   const saveConfig = () => {
-    setEndpoint(tempEndpoint)
-    localStorage.setItem('chat_api_endpoint', tempEndpoint)
+    let cleanEndpoint = (tempEndpoint || '').trim()
+    if (cleanEndpoint.startsWith('http') && !cleanEndpoint.endsWith('/chat')) {
+      cleanEndpoint = cleanEndpoint.replace(/\/+$/, '') + '/chat'
+    }
+    setEndpoint(cleanEndpoint)
+    localStorage.setItem('chat_api_endpoint', cleanEndpoint)
     localStorage.setItem('chat_mock_mode', String(mockMode))
     setShowConfig(false)
   }
